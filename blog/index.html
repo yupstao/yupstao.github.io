@@ -1,224 +1,239 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    
-    <script>
-      (function(w, d, s, l, i) {
+
+<head>
+
+    <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+<script>
+    (function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({
-          "gtm.start": new Date().getTime(),
-          event: "gtm.js"
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
         });
         var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
         j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=GTM-000000' + i + dl;
         f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-XXXXXXX");
-    </script>
-    
-    <title>404 Page Not Found | Raditian</title>
-    <style>
-       
-      .rad-fade-in {
+    })(window, document, 'script', 'dataLayer', 'GTM-000000');
+</script>
+
+
+<title></title>
+<style>
+     
+    .rad-fade-in {
         will-change: opacity, transform;
         animation-name: rad-fade-in-fallback;
         animation-duration: 5s;
         animation-fill-mode: both;
-      }
+    }
 
-      @keyframes rad-fade-in-fallback {
+    @keyframes rad-fade-in-fallback {
         0% {
-          opacity: 0;
+            opacity: 0;
         }
 
         75% {
-          opacity: 0;
+            opacity: 0;
         }
 
         100% {
-          opacity: 1;
+            opacity: 1;
         }
-      }
+    }
 
-      .fonts-loaded .rad-fade-in.rad-waiting {
+    .fonts-loaded .rad-fade-in.rad-waiting {
         animation-name: none;
         opacity: 0;
-      }
+    }
 
-      .fonts-loaded .rad-fade-in.rad-animate {
+    .fonts-loaded .rad-fade-in.rad-animate {
         animation-name: rad-fade-in;
         animation-duration: 1.1s;
         animation-fill-mode: both;
-      }
+    }
 
-      @keyframes rad-fade-in {
+    @keyframes rad-fade-in {
         0% {
-          opacity: 0;
+            opacity: 0;
         }
 
         100% {
-          opacity: 1;
+            opacity: 1;
         }
-      }
+    }
 
-       
-      .rad-fade-in-long {
+     
+    .rad-fade-in-long {
         will-change: opacity, transform;
         animation-name: rad-fade-in-long-fallback;
         animation-duration: 8s;
         animation-fill-mode: both;
-      }
+    }
 
-      @keyframes rad-fade-in-long-fallback {
+    @keyframes rad-fade-in-long-fallback {
         0% {
-          opacity: 0;
+            opacity: 0;
         }
 
         75% {
-          opacity: 0;
+            opacity: 0;
         }
 
         100% {
-          opacity: 1;
+            opacity: 1;
         }
-      }
+    }
 
-      .fonts-loaded .rad-fade-in-long.rad-waiting {
+    .fonts-loaded .rad-fade-in-long.rad-waiting {
         animation-name: none;
         opacity: 0;
-      }
+    }
 
-      .fonts-loaded .rad-fade-in-long.rad-animate {
+    .fonts-loaded .rad-fade-in-long.rad-animate {
         animation-name: rad-fade-in-long;
         animation-duration: 2s;
         animation-fill-mode: both;
-      }
+    }
 
-      @keyframes rad-fade-in-long {
+    @keyframes rad-fade-in-long {
         0% {
-          opacity: 0;
+            opacity: 0;
         }
 
         20% {
-          opacity: 0;
+            opacity: 0;
         }
 
         100% {
-          opacity: 1;
+            opacity: 1;
         }
-      }
+    }
 
-       
-      .rad-fade-down {
+     
+    .rad-fade-down {
         will-change: opacity, transform;
         animation-name: rad-fade-down-fallback;
         animation-duration: 5s;
         animation-fill-mode: both;
         transform: translateY(-30px);
-      }
+    }
 
-      @keyframes rad-fade-down-fallback {
+    @keyframes rad-fade-down-fallback {
         0% {
-          opacity: 0;
-          transform: translateY(-30px);
+            opacity: 0;
+            transform: translateY(-30px);
         }
 
         75% {
-          opacity: 0;
-          transform: translateY(-30px);
+            opacity: 0;
+            transform: translateY(-30px);
         }
 
         100% {
-          opacity: 1;
-          transform: translateY(0);
+            opacity: 1;
+            transform: translateY(0);
         }
-      }
+    }
 
-      .fonts-loaded .rad-fade-down.rad-waiting {
+    .fonts-loaded .rad-fade-down.rad-waiting {
         animation-name: none;
         opacity: 0;
         transform: translateY(-30px);
-      }
+    }
 
-      .fonts-loaded .rad-fade-down.rad-animate {
+    .fonts-loaded .rad-fade-down.rad-animate {
         animation-name: rad-fade-down;
         animation-duration: 1.1s;
-      }
+    }
 
-      @keyframes rad-fade-down {
+    @keyframes rad-fade-down {
         0% {
-          opacity: 0;
-          transform: translateY(-30px);
+            opacity: 0;
+            transform: translateY(-30px);
         }
 
         100% {
-          opacity: 1;
-          transform: translateY(0);
+            opacity: 1;
+            transform: translateY(0);
         }
-      }
+    }
 
-       
-      .rad-scale-down {
+     
+    .rad-scale-down {
         will-change: opacity, transform;
         animation-name: rad-scale-down-fallback;
         animation-duration: 5s;
         animation-fill-mode: both;
         transform-origin: 50% 0;
-      }
+    }
 
-      @keyframes rad-scale-down-fallback {
+    @keyframes rad-scale-down-fallback {
         0% {
-          opacity: 0;
-          transform: scaleY(0.95);
+            opacity: 0;
+            transform: scaleY(0.95);
         }
 
         75% {
-          opacity: 0;
-          transform: scaleY(0.95);
+            opacity: 0;
+            transform: scaleY(0.95);
         }
 
         100% {
-          opacity: 1;
-          transform: scaleY(1);
+            opacity: 1;
+            transform: scaleY(1);
         }
-      }
+    }
 
-      .fonts-loaded .rad-scale-down.rad-waiting {
+    .fonts-loaded .rad-scale-down.rad-waiting {
         animation-name: none;
         opacity: 0;
         transform: scaleY(0.95);
-      }
+    }
 
-      .fonts-loaded .rad-scale-down.rad-animate {
+    .fonts-loaded .rad-scale-down.rad-animate {
         animation-name: rad-scale-down;
         animation-duration: 1.1s;
         animation-fill-mode: both;
-      }
+    }
 
-      @keyframes rad-scale-down {
+    @keyframes rad-scale-down {
         0% {
-          opacity: 0;
-          transform: scaleY(0.95);
+            opacity: 0;
+            transform: scaleY(0.95);
         }
 
         100% {
-          opacity: 1;
-          transform: scaleY(1);
+            opacity: 1;
+            transform: scaleY(1);
         }
-      }
-    </style>
+    }
+</style>
 
-    <link rel="stylesheet" href='yupstao.github.io/css/main.css' />
-    <link rel="stylesheet" href='yupstao.github.io/css/rad-icons.css' />
-  </head>
 
-  <body>
-    <header class="header fixed-top rad-animation-group" id="header">
+<link rel="stylesheet" href="yupstao.github.io/css/main.css"/>
+
+<link rel="stylesheet" href="yupstao.github.io/css/rad-icons.css"/>
+
+<link rel="stylesheet" href="yupstao.github.io/css/custom.css"/>
+
+
+    
+
+
+</head>
+
+<body>
+
+	<header class="header fixed-top rad-animation-group" id="header">
   <div class="container rad-fade-in">
     <nav class="navbar navbar-expand-lg navbar-light p-0">
       <a class="navbar-brand" href="yupstao.github.io/yupstao.github.io/">
@@ -275,19 +290,46 @@
 </header>
 
 
-
-    <section class="section four-o-four">
-      <div class="container text-center">
-        <h1 class="display-1">404</h1>
-        <h4>Page not found</h4>
-        <p>
-          Sorry, but the page you were looking for could not be found.
-        </p>
-        <a href="yupstao.github.io/yupstao.github.io/" class="btn btn-primary">Back to homepage</a>
+  
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-lg-4 col-sm-6 mb-4">
+  <article class="card shadow">
+    <img class="rounded card-img-top" src="/yupstao.github.io/blog/post3.png" alt="Bla Bla Bla Bla">
+    <div class="card-body">
+      <h4 class="card-title"><a class="text-dark" href="yupstao.github.io/blog/post3/">Bla Bla Bla Bla</a>
+      </h4>
+      <p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <a href="yupstao.github.io/blog/post3/" class="btn btn-sm btn-primary">Read More</a>
+    </div>
+  </article>
+</div>
+        
+        <div class="col-lg-4 col-sm-6 mb-4">
+  <article class="card shadow">
+    <img class="rounded card-img-top" src="/yupstao.github.io/blog/post1.png" alt="Amazon increase income 1.5 Million">
+    <div class="card-body">
+      <h4 class="card-title"><a class="text-dark" href="yupstao.github.io/blog/post1/">Amazon increase income 1.5 Million</a>
+      </h4>
+      <p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <a href="yupstao.github.io/blog/post1/" class="btn btn-sm btn-primary">Read More</a>
+    </div>
+  </article>
+</div>
+        
       </div>
-    </section>
+    </div>
+  </section>
+  
 
-    <footer class="footer">
+
+
+	<footer class="footer">
   <div class="container">
     <div class="footer__left">
       <div class="footer__copy">
@@ -328,7 +370,8 @@
     </div>
   </div>
 </footer>
- <script src='yupstao.github.io/js/rad-animations.js'></script>
+
+    <script src='yupstao.github.io/js/rad-animations.js'></script>
 <script src='yupstao.github.io/js/library/lozad.min.js'></script>
 <script>
   window.addEventListener("load", function() {
@@ -383,5 +426,6 @@
     })
 </script>
 
-  </body>
+</body>
+
 </html>
